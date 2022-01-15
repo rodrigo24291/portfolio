@@ -19,7 +19,6 @@ var options = {
     typeSpeed: 180,
     loop:true
   };
-  kkg
   
   var typed = new Typed('#efect', options);
 
