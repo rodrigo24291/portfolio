@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,700;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <link rel="stylesheet" href="owl.carousel.min.css">
 <link rel="stylesheet" href="owl.theme.default.min.css">
 <link rel="stylesheet" href="lightbox.min.css">
@@ -36,10 +38,10 @@
 
             <div class="nav__category">
                 <ul>
-                    <li>Inicio</li>
-                    <li>Inicio</li>
-                    <li>Inicio</li>
-                    <li>Inicio</li>
+                    <li><a href="#INICIO">INICIO</a></li>
+                    <li><a href="#ABOUT">ABOUT</a></li>
+                    <li><a href="#SKILL">SKILL</a></li>
+                    <li><a href="#JOBS">JOBS</a></li>
 
                 </ul>
 
@@ -47,6 +49,7 @@
 
         </div>
 
+        <div class="ancla py-4" id="INICIO"></div>
         <div class="heroe row">
             <div class="d-flex justify-content-center col-12 col-md-6">
                 <div class="heroe__primary">
@@ -64,12 +67,18 @@
         </div>
         <div class="wave">
         </div>
+        
     </div>
 
 
 
     <div class="about container">
-<div class="row d-flex justify-content-around align-items-center">
+        <div class="ancla py-4" id="ABOUT"></div>
+
+        <div class="title-container">
+        <h2  class="Title colour text-center mt-4 wow animate__animated animate__fadeInLeft" data-wow-duration="1s" data-wow-delay="1s"> ABOUT <span class="Title-second">ME</span> </h2>
+    </div>
+        <div class="row d-flex justify-content-around align-items-center">
     <div class="col-12 col-md-6">
         <div class="about__image">
 
@@ -95,10 +104,16 @@
 
 </div>
     </div>
+    
+    <div class="ancla py-4" id="SKILL"></div>
 </div>
 
 <div class="skill container-fluid">
 
+    <div class="title-container">
+
+    <h2 class="Title colour-white py-4 text-center mt-4 wow animate__animated animate__fadeInRight" data-wow-duration="1s" data-wow-delay="1s" > MY <span class="Title-second">SKILL</span> </h2>
+    </div>
 <div class="skill__container container">
 
 <div class="row">
@@ -203,6 +218,8 @@
                  
                 </div>
             </div>
+            
+        <div class="ancla py-4" id="JOBS"></div>
         </div>
 
         </div>
@@ -214,36 +231,53 @@
         </div>
         </div>
 
-        <div class="portfolio container ">
+        <div class="portfolio container">
+            <div class="title-container ">
 
-            
+            <h2  class="Title colour text-center mt-4 wow animate__animated   animate__backInDown" data-wow-duration="1s" data-wow-delay="1s"> MY <span class="Title-second">JOBS</span> </h2>
 
+</div>
 
-
-
-            <div class="owl-carousel owl-theme mt-5">
-                <div class="item"><a href="https://rodrigo24291.github.io/"><img class="example-image" src="img/blackjack.png" alt="image-1" /></a></div>
-                <div class="item"><a href="https://recetaslaravel24.000webhostapp.com/"><img src="img/laravelreceta.png" alt=""></a></div>
-                <div class="item"><a href="https://rodrigo24291.github.io/Breakingbadreact/"><img src="img/breakingbad.png" alt="" srcset=""></a></div>
-                <div class="item"><a href="https://rodrigo24291.github.io/cotizar-seguro/"><img src="img/cotizaseguro.png" alt="" srcset=""></a></div>
-                <div class="item"><a href="https://rodrigo24291.github.io/climareact/"><img src="img/gastos semanal react.png" alt="" srcset=""></a></div>
-                <div class="item"><a href="https://rodrigo24291.github.io/portfolio1/"><img src="img/landingpage1.png" alt="" srcset=""></a></div>
-                <div class="item"><a href="https://rodrigo24291.github.io/viaje4/"><img src="img/landingpage3.png" alt="" srcset=""></a></div>
-                <div class="item"><a href="https://rodrigo24291.github.io/heroe-app-react/"><img src="img/appheroe.png" alt="" srcset=""></a></div>
-                <div class="item"><img src="img/climareact.png" alt="" srcset=""></div>
-                <div class="item"><a href="https://rodrigo24291.github.io/portfolio2/"><img src="img/ladingpage2.png" alt="" srcset=""></a></div>
+            <div class="owl-carousel owl-theme mt-5 carrousel">
+                <div class="item"><img class="light-box" data-text="Aplicacion de juego de black jack realizada con ccs3,javascript y html" data-web="https://rodrigo24291.github.io/" data-github="https://github.com/rodrigo24291/rodrigo24291.github.io" src="img/blackjack.png" alt="image-1" /></div>
+                <div class="item"><img  class="light-box" data-text="Blog de comida  realizado con laravel,boostrap,vue y MYSQL" data-github="https://github.com/rodrigo24291/recetaslaravel" data-web="recetaslaravel24.000webhostapp.com" src="img/laravelreceta.png" alt=""></div>
+                <div class="item"><img  class="light-box" src="img/breakingbad.png" data-text="Aplicacion que consume api realizada en React" data-react="https://github.com/rodrigo24291/Breakingbadreact" data-web="https://rodrigo24291.github.io/Breakingbadreact/" alt="" srcset=""></div>
+                <div class="item"><img  class="light-box" src="img/cotizaseguro.png" data-text="Aplicacion realizada con css3, html y javascript" data-web="https://rodrigo24291.github.io/cotizar-seguro/" data-github="https://github.com/rodrigo24291/cotizar-seguro" alt="" srcset=""></div>
+                <div class="item"><img  class="light-box" src="img/gastos semanal react.png" data-text="Aplicacion realizada en React"  class="light-box" alt="" data-github="https://github.com/rodrigo24291/App-Gasto-React" data-web="https://rodrigo24291.github.io/App-Gasto-React/" srcset=""></div>
+                <div class="item"><img  class="light-box" src="img/landingpage1.png" data-text="Landing Page realizada con css3,html y javascript" data-web="https://rodrigo24291.github.io/portfolio1/" data-github="https://github.com/rodrigo24291/portfolio1"  class="light-box" alt="" srcset=""></div>
+                <div class="item"><img  class="light-box" src="img/landingpage3.png" data-text="Landing Page realizada con css3,html y javascript" data-github="https://github.com/rodrigo24291/viaje4" data-web="https://rodrigo24291.github.io/viaje4/"  class="light-box" alt="" srcset=""></div>
+                <div class="item"><img  class="light-box" src="img/appheroe.png" data-text="Aplicacion realizada con React" data-github="https://github.com/rodrigo24291/heroe-app-react" data-web="https://rodrigo24291.github.io/heroe-app-react/" class="light-box" alt="" srcset=""></div>
+                <div class="item"><img  class="light-box" src="img/climareact.png" data-text="Aplicacion que consume api realizada en React"  class="light-box" alt="" srcset=""></div>
+                <div class="item"><img  class="light-box" src="img/ladingpage2.png" data-text="Landing Page realizada con css3,html y javascript" data-web="https://rodrigo24291.github.io/portfolio2/" data-github="https://github.com/rodrigo24291/portfolio2" class="light-box" alt="" srcset=""></div>
                 
-            </div>
            
 
 
-            
         </div>
 
 </div>
 
 
 </div>
+<div id="light-principal">
+<div class="light d-flex justify-content-center">
+
+    <div id="contenedor-light"  class=" d-flex justify-content-center align-items-center flex-column">
+<div class="img_light">
+<img id="insertarimagen" src="" alt="">
+
+</div>
+        <p>
+            <p class="comentario">Aplicacion realizada con javascript, css3 y html </p>
+            <span class="links">
+            <a id="link-github" href="http://" class="link-light github"><i class="fab fa-github"></i></a>
+            <a id="link-web" href="http://" class="link-light internet"><i class="fab fa-internet-explorer"></i></a>
+        </span>
+        </p>
+    </div>
+</div>
+</div>
+
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
@@ -254,6 +288,8 @@
 <script src="main.js"></script>
 
 <script src="lightbox-plus-jquery.min.js"></script>
+<script src="https://wowjs.uk/dist/wow.min.js"></script>
+    <script>new WOW().init()</script>
 
 </body>
 
